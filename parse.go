@@ -265,7 +265,6 @@ func parseNameVersion(l *lex, ua *UserAgent) bool {
 func parseGeneric(l *lex) *UserAgent {
 	ua := new()
 	if !parseNameVersion(l, ua) {
-		return nil
 	}
 	if url, ok := browsers[ua.Name]; ok {
 		ua.Type = Browser
@@ -279,5 +278,5 @@ func parseGeneric(l *lex) *UserAgent {
 		return ua
 	}
 
-	return nil
+	return ua
 }

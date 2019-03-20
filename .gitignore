@@ -1,0 +1,7 @@
+.idea
+.idea/*
+build/
+config/setting.yaml
+setting.yaml
+tmp/*
+*.log
